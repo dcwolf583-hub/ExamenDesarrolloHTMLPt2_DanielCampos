@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="iziToast-master/dist/css/iziToast.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h4>Contador de palabras</h4>
+            </div>
+            <div class="card-body">
+                <button type="button" id="btnModal" class="btn btn-primary">Nuevo</button>
+                <a href="Ejercicio2_FrecuenciaCaracteres.html"><button type="button" class="btn btn-info">Anterior</button></a>
+                <a href="Ejercicio4_NumeroVocales.html"><button type="button" class="btn btn-success">Siguiente</button></a>
+                <a href="index.html"><button type="button" class="btn btn-warning">Volver a Inicio</button></a>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="modalPalabra" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ingrese el parrafo</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                        <label for="">Ingrese un párrafo</label>
+                        <input type="text" class="form-control" id="txtPalabra" placeholder="Ingrese un párrafo">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button id="btnProcesar" type="button" class="btn btn-success">Procesar</button>
+                  <button id="btnLimpiar" type="button" class="btn btn-warning">Limpiar</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="iziToast-master/dist/js/iziToast.js"></script>
+    <script src="dist/script/ejercicio3_ContadorPalabras.js"></script>
+</body>
+</html>
